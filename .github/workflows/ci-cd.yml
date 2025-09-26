@@ -12,9 +12,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v3
-
     - name: Log in to GitHub Container Registry
       run: echo "${{ secrets.CR_PAT }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
@@ -22,10 +19,10 @@ jobs:
       run: |
         docker build -t ghcr.io/sandyzayn/wisecow-app:${{ github.sha }} .
 
-    - name: Test application
+    - name: Test the application
       run: |
-        echo "🧪 Testing application..."
-        docker run --rm ghcr.io/sandyzayn/wisecow-app:${{ github.sha }} node -e "console.log('✅ Application can start successfully')"
+        docker run --rm ghcr.io/sandyzayn/wisecow-app:${{ github.sha }} which cowsay
+        docker run --rm ghcr.io/sandyzayn/wisecow-app:${{ github.sha }} which fortune
 
     - name: Push Docker image
       run: |
@@ -33,7 +30,7 @@ jobs:
         
     - name: Success message
       run: |
-        echo "✅ Build and push completed successfully!"
-        echo "📦 Image: ghcr.io/sandyzayn/wisecow-app:${{ github.sha }}"
-        echo "🔗 You can pull and run locally:"
-        echo "   docker run -p 3000:3000 ghcr.io/sandyzayn/wisecow-app:${{ github.sha }}"
+        echo "✅ CI/CD Pipeline Completed Successfully!"
+        echo "📦 Docker Image: ghcr.io/sandyzayn/wisecow-app:${{ github.sha }}"
+        echo "🐳 Run locally: docker run -p 3000:3000 ghcr.io/sandyzayn/wisecow-app:${{ github.sha }}"
+        echo "🔗 Image URL: https://ghcr.io/sandyzayn/wisecow-app:${{ github.sha }}"
