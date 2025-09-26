@@ -34,14 +34,14 @@ wisecow-app/
 ```
 
 ## 🖼️ Screenshots
-<img width="1918" height="1019" alt="Image" src="https://github.com/user-attachments/assets/03982afc-dbc6-4fd0-b8fe-7543fff0776a" />
-<img width="1919" height="1019" alt="Image" src="https://github.com/user-attachments/assets/016f61dd-3b3a-40f1-85d2-687756768fc6" />
-<img width="1919" height="1019" alt="Image" src="https://github.com/user-attachments/assets/f376e7a2-e0c2-4abd-8e48-05ed2071181e" />
-<img width="1919" height="1019" alt="Image" src="https://github.com/user-attachments/assets/8ad36f4a-7ab9-4139-acfa-78ee9d6ef1d7" />
-<img width="1919" height="1020" alt="Image" src="https://github.com/user-attachments/assets/b6961cf2-242d-4ed3-8a51-a7bb884126a9" />
-<img width="1915" height="1017" alt="Image" src="https://github.com/user-attachments/assets/5b789851-40fa-47d4-be6b-5e92c61318b1" />
-<img width="1919" height="1017" alt="Image" src="https://github.com/user-attachments/assets/9ffa0ce8-e200-4375-b820-377fde03691b" />
-<img width="1919" height="1016" alt="Image" src="https://github.com/user-attachments/assets/ad4fcf29-5dd4-4f8b-97bb-d6a2b2ecad8d" />
+<img width="1919" height="1019" alt="Image" src="https://github.com/user-attachments/assets/69e98349-45af-41d0-95d2-c7d9d3e3e455" />
+<img width="1919" height="1020" alt="Image" src="https://github.com/user-attachments/assets/40ae92b7-ccc1-48be-bdec-2bf614211f3f" />
+<img width="1915" height="1017" alt="Image" src="https://github.com/user-attachments/assets/e32306c9-0cf1-4c04-85fc-3feb327b21a7" />
+<img width="1919" height="1017" alt="Image" src="https://github.com/user-attachments/assets/7bb4fc36-822f-4178-a46e-8cd2d1825976" />
+<img width="1919" height="1016" alt="Image" src="https://github.com/user-attachments/assets/7814a188-1c07-4838-bb41-ebd3ab4872b4" />
+<img width="1918" height="1019" alt="Image" src="https://github.com/user-attachments/assets/131c2aa3-9b83-4904-9db4-652dc9d1ac72" />
+<img width="1919" height="1019" alt="Image" src="https://github.com/user-attachments/assets/7169a769-fa5f-48bd-87b8-e3f75d30107a" />
+<img width="1919" height="1019" alt="Image" src="https://github.com/user-attachments/assets/590226c5-0ceb-4248-baa6-b929b38922c0" />
 
 ## ⚡ Useful Commands
 
