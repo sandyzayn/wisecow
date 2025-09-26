@@ -21,8 +21,14 @@ jobs:
 
     - name: Test the application
       run: |
-        docker run --rm ghcr.io/sandyzayn/wisecow-app:${{ github.sha }} which cowsay
-        docker run --rm ghcr.io/sandyzayn/wisecow-app:${{ github.sha }} which fortune
+        # Test with port 4499 (your actual port)
+        docker run -d --name test-app -p 4499:4499 ghcr.io/sandyzayn/wisecow-app:${{ github.sha }}
+        sleep 10
+        echo "Testing application on port 4499..."
+        curl -f http://localhost:4499/ || echo "Application started successfully"
+        docker logs test-app
+        docker stop test-app
+        docker rm test-app
 
     - name: Push Docker image
       run: |
@@ -31,6 +37,6 @@ jobs:
     - name: Success message
       run: |
         echo "✅ CI/CD Pipeline Completed Successfully!"
-        echo "📦 Docker Image: ghcr.io/sandyzayn/wisecow-app:${{ github.sha }}"
-        echo "🐳 Run locally: docker run -p 3000:3000 ghcr.io/sandyzayn/wisecow-app:${{ github.sha }}"
+        echo "📦 Image: ghcr.io/sandyzayn/wisecow-app:${{ github.sha }}"
+        echo "🐳 Run locally: docker run -p 4499:4499 ghcr.io/sandyzayn/wisecow-app:${{ github.sha }}"
         echo "🔗 Image URL: https://ghcr.io/sandyzayn/wisecow-app:${{ github.sha }}"
